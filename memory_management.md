@@ -60,7 +60,7 @@ There are two ways for performing manual garbage collection: time-based and even
 3. **Efficient memory cleanup:** The garbage collector is designed to minimise performance effects while swiftly identifying and collecting short-lived objects via generational garbage collection.
 4. **Customizable settings:** The garbage collector provides options to customize its settings, such as adjusting the thresholds for different generations, allowing developers to fine-tune the garbage collection process based on their specific application requirements.
    
-Disadvantages :
+### Disadvantages :
 1. **Impact on performance:** Although the garbage collector is designed to efficiently clean up unused memory, there may still be some CPU consumption and execution time overhead, particularly when working with a large number of objects.
 2. **The difficulty of memory management:** Although Python’s garbage collector makes managing memory easier, using it successfully may still necessitate knowledge of concepts like object lifetimes, object references, and garbage collection algorithms.
 3. **Limited control over memory management:** The autonomous nature of the garbage collector leaves developers with little control over the precise timing and behaviour of memory cleanup, which may not be ideal for many application scenarios where fine-grained control over memory management is necessary.
