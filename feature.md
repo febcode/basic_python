@@ -1,4 +1,4 @@
-#Features of Python
+## Features of Python
 Python has plenty of features that make it the most demanding and popular. Let’s read about a few of the best features that Python has:
 
 1.Easy to read and understand
