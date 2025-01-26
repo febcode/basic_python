@@ -1,6 +1,6 @@
 Threading in Python is a way to achieve concurrent execution in a program by running multiple threads within a single process. Threads are smaller units of a process that can run independently, sharing the same memory space. Python provides the threading module to work with threads.
 
-##Key Concepts:
+## Key Concepts:
 
 1. **Thread:** A sequence of instructions that can execute independently.
 
