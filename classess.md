@@ -148,4 +148,108 @@ def update_count():
 update_count()
 
 ```
+### **Access Specifiers in Python**
+Access specifiers (also called **access modifiers**) in Python define the visibility and accessibility of class attributes and methods. Unlike other languages like Java or C++, Python does not enforce strict access control but follows naming conventions.
+
+---
+
+### **Types of Access Specifiers in Python**
+| **Specifier** | **Syntax** | **Access** |
+|--------------|-----------|------------|
+| **Public** | `self.var` | Accessible everywhere |
+| **Protected** | `self._var` | Accessible within the class and subclasses |
+| **Private** | `self.__var` | Accessible only within the class (Name Mangling applies) |
+
+---
+
+# **1. Public Access Specifier**
+- Any class attribute or method defined without an underscore (`_`) is **public**.
+- It can be accessed anywhere, even outside the class.
+
+```python
+class Car:
+    def __init__(self, brand):
+        self.brand = brand  # Public attribute
+
+    def display(self):  # Public method
+        return f"Car brand: {self.brand}"
+
+car = Car("Toyota")
+print(car.brand)  # ✅ Accessible
+print(car.display())  # ✅ Accessible
+```
+
+---
+
+## **2. Protected Access Specifier (`_single_underscore`)**
+- A **protected** attribute/method is prefixed with a **single underscore (`_`)**.
+- It is **conventionally** meant to be used only within the class and subclasses.
+- However, it can still be accessed from outside (not strictly enforced).
+
+```python
+class Vehicle:
+    def __init__(self, brand):
+        self._brand = brand  # Protected attribute
+
+    def _display(self):  # Protected method
+        return f"Vehicle brand: {self._brand}"
+
+class Car(Vehicle):
+    def show(self):
+        return f"Car brand: {self._brand}"  # Accessible in subclass
+
+car = Car("Honda")
+print(car.show())  # ✅ Accessible in subclass
+print(car._brand)  # ⚠️ Not recommended but still accessible
+print(car._display())  # ⚠️ Not recommended but still accessible
+```
+🔹 **Python does not strictly enforce protected access.** It's just a naming convention.
+
+---
+
+## **3. Private Access Specifier (`__double_underscore`)**
+- A **private** attribute/method is prefixed with **double underscores (`__`)**.
+- It cannot be directly accessed outside the class.
+- Python uses **name mangling** (`_ClassName__var`) to make it inaccessible from outside.
+
+```python
+class BankAccount:
+    def __init__(self, balance):
+        self.__balance = balance  # Private attribute
+
+    def __secret_method(self):  # Private method
+        return "This is a secret method"
+
+    def get_balance(self):  # Public method to access private data
+        return self.__balance
+
+account = BankAccount(1000)
+
+# print(account.__balance)  # ❌ AttributeError: Cannot access private variable
+# print(account.__secret_method())  # ❌ AttributeError: Cannot access private method
+
+print(account.get_balance())  # ✅ Correct way to access private attribute
+
+# Accessing using name mangling (not recommended)
+print(account._BankAccount__balance)  # ⚠️ Not recommended but works
+print(account._BankAccount__secret_method())  # ⚠️ Not recommended but works
+```
+
+🔹 **Python does not have true private variables**, but name mangling makes it harder to access them.
+
+---
+
+## **Access Specifiers Summary**
+| **Specifier** | **Usage** | **Accessible in** | **Enforced?** |
+|-------------|----------|----------------|------------|
+| **Public (`self.var`)** | Default access | Everywhere | No |
+| **Protected (`self._var`)** | Internal use | Class & subclasses | No (only convention) |
+| **Private (`self.__var`)** | Hide implementation details | Only within class (name mangling) | Partially (via name mangling) |
+
+---
+
+## **When to Use Access Specifiers?**
+- **Public (`self.var`)** → When the attribute/method should be freely accessible.
+- **Protected (`self._var`)** → When it is intended for internal use within the class and subclasses.
+- **Private (`self.__var`)** → When you want to hide implementation details from outside access.
 
