@@ -11,9 +11,10 @@ its about learning basics concept of python
 |[link](https://github.com/febcode/basic_python/blob/main/context-management.md)|Context management (with)||
 |[Link](https://github.com/febcode/basic_python/blob/main/file_handeling.md)|File Handeling, context management and Os Modules for files||
 |[Link](https://github.com/febcode/basic_python/blob/main/inheritance.md)|Python Inheritance , MRO ,super() , Polymorphism ,  Abstract class ,Meta class ,Interfaces ||
+|[Link](https://github.com/febcode/basic_python/blob/main/getters_setters.md)|getters ,setters ||
 |[Link](https://github.com/febcode/basic_python/blob/main/memory_management.md)|Memory management ,garbage collection ,refrence counting ,Type of memory | |
 |[Link](https://github.com/febcode/basic_python/blob/main/threading_multiprocessing_async.md)| Threading ,Multi processing and async||
 |[Link](https://github.com/febcode/basic_python/blob/main/exception_handeling.md)|Exception ahndeling||
-|[Link](https://github.com/febcode/basic_python/blob/main/python_copy.md)|referenc ,=,deep copy , shallow copy |
+|[Link](https://github.com/febcode/basic_python/blob/main/python_copy.md)|reference ,=,deep copy , shallow copy |
 
 
