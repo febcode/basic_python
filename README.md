@@ -7,6 +7,7 @@ its about learning basics concept of python
 |[link](https://github.com/febcode/basic_python/blob/main/feature.md)|Features , advantages and disadvantages of Python||
 |[link](https://github.com/febcode/basic_python/blob/main/datatype.md)|Data Types in python and there difference||
 | [Link](https://github.com/febcode/basic_python/blob/main/built_in_special_function.md)|Lambda,Map,reduce,Sorted||
+|[Link](https://github.com/febcode/basic_python/blob/main/Comprehensions.md)|Comprehnsiona , List ,Dictionory , set ,generator ||
 |[Link](https://github.com/febcode/basic_python/blob/main/classess.md)|Classes,Objects ,variables ,init,Namespace,access specifiers||
 |[link](https://github.com/febcode/basic_python/blob/main/context-management.md)|Context management (with)||
 |[Link](https://github.com/febcode/basic_python/blob/main/file_handeling.md)|File Handeling, context management and Os Modules for files||
@@ -17,5 +18,6 @@ its about learning basics concept of python
 |[Link](https://github.com/febcode/basic_python/blob/main/exception_handeling.md)|Exception ahndeling||
 |[Link](https://github.com/febcode/basic_python/blob/main/python_copy.md)|reference ,=,deep copy , shallow copy ||
 |[link](https://github.com/febcode/basic_python/blob/main/pickeling_unpickeling.md)|Pickeling, unpickling||
+
 
 
