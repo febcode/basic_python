@@ -14,5 +14,6 @@ its about learning basics concept of python
 |[Link](https://github.com/febcode/basic_python/blob/main/memory_management.md)|Memory management ,garbage collection ,refrence counting ,Type of memory | |
 |[Link](https://github.com/febcode/basic_python/blob/main/threading_multiprocessing_async.md)| Threading ,Multi processing and async||
 |[Link](https://github.com/febcode/basic_python/blob/main/exception_handeling.md)|Exception ahndeling||
+|[Link](https://github.com/febcode/basic_python/blob/main/python_copy.md)|referenc ,=,deep copy , shallow copy |
 
 
