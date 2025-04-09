@@ -183,4 +183,3 @@ print(p.name)  # Alice
 - ✅ **Use `*args` and `**kwargs`** to handle function arguments.  
 - ✅ **Use class-based decorators** for complex behavior.  
 
-Would you like a **real-world example** like **rate-limiting API requests** using decorators? 🚀
